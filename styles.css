@@ -1,0 +1,97 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Georgia, serif;
+    font-size: 18px;  
+    background-image: url("https://wallpapers-clan.com/wp-content/uploads/2024/04/pokemon-eevee-lovely-pastel-desktop-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  h1 {
+    text-align: center;
+    margin: 50px 0 10px 0;
+  }
+  p {
+    text-align: center;
+    font-style: italic;
+    margin: 10px 0 30px 0;
+  }
+  form {
+    width: 50vw;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5%;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  label {
+    display: block;
+    color: black;
+  }
+  /*Text Type Input*/
+  .text-content input {
+    width: 98.5%;
+    margin: 10px 0 20px 0;
+    padding: 5px 0;
+    background-color: rgba(255,255,255,0.9);
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  /*Radio Type Input*/
+  /*range(title,prev contents)=30px*/
+  .radio-title {
+    margin: 10px 0;
+  }
+  /*range(content,content)=10px*/
+  .radio-content input {
+    margin: 0 0 10px 0;
+  }
+  /*Select Type Input*/
+  /*range(title,prev contents)=30px*/
+  .select-title {
+    margin: 20px 0 10px 0;
+  }
+  select, textarea {
+    width: 98.5%;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.9);
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  /*Checkbox Type Input*/
+  /*range(title,prev contents)=30px*/
+  .checkbox-title {
+    margin: 30px 0 10px 0;
+  }
+  /*range(content,content)=10px*/
+  .checkbox-content {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  /*Textarea Type Input*/
+  /*range(title,prev contents)=30px*/
+  .textarea-title {
+    margin: 20px 0 10px 0;
+  }
+  /*Submit Type Button*/
+  input[type="submit"] {
+    width: 98.5%;
+    height: 7vh;
+    margin: 40px auto 30px auto;
+    font-size: 1rem;
+    font-family: cursive, sans-serif;
+    color: rgba(0,0,0,0.9);
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0,255,64,0.9);
+  }
+  input[type="submit"]:hover {
+    color: rgba(255,255,255,0.9);
+    background-color: rgba(0,255,127,0.9);
+  }
+  

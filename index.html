@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!--Title & Description-->
+    <h1 id="title">Anime Survey Form</h1>
+    <p id="description">Share us about your favorite anime</p>
+    <!--Form-->
+    <form id="survey-form">
+      <!--Name, Email, & Age - Text Inputs-->
+      <div class="text-input">
+        <label for="name" id="name-label" class="text-content">Name
+          <input type="text" id="name" placeholder="  Enter your name" required>
+        </label>
+        <label for="email" id="email-label" class="text-content">Email
+          <input type="email" id="email" placeholder="  Enter your email" required>
+        </label>
+        <label for="number" id="number-label" class="text-content">Age
+          <input type="number" id="number" min="0" max="125" placeholder="  Age">
+        </label>
+      </div>
+      <!--Referrer - Radio Inputs-->
+      <div class="radio-input">
+        <label class="radio-title">How do you know about anime?</label>
+        <label for="tv-series" class="radio-content"><input id="tv-series" type="radio" name="referrer" value="tv-series" checked> TV Series</label>
+        <label for="social-media" class="radio-content"><input id="social-media" type="radio" name="referrer" value="social-media"> Social Media</label>
+        <label for="friends" class="radio-content"><input id="friends" type="radio" name="referrer" value="friends"> Friends</label>
+        <label for="others" class="radio-content"><input id="others" type="radio" name="referrer" value="others"> Others</label>
+      </div>
+      <!--Choose the best anime - Select Inputs-->
+      <div class="select-input">
+        <label for="dropdown" class="select-title">What is the best anime?</label>
+        <select id="dropdown" class="select-input">
+          <option value="">Choose one</option>
+          <option value="1">Sousou no Frieren</option>
+          <option value="2">Fullmetal Alchemist: Brotherhood</option>
+          <option value="3">One Piece</option>
+          <option value="4">Attack on Titan</option>
+          <option value="5">Others</option>
+        </select>
+      </div>
+      <!--Checkbox favorite genre - Checkbox Inputs-->
+      <div class="checkbox-input">
+        <label class="checkbox-title">What is your favorite genre?</label>
+        <label for="shounen" class="checkbox-content">
+          <input id="shounen" type="checkbox" value="shounen" checked> Shounen
+        </label>
+        <label for="shoujo" class="checkbox-content">
+          <input id="shoujo" type="checkbox" value="shoujo"> Shoujo
+        </label>
+        <label for="isekai" class="checkbox-content">
+          <input id="isekai" type="checkbox" value="isekai"> Isekai
+        </label>
+        <label for="slice-of-life" class="checkbox-content">
+          <input id="slice-of-life" type="checkbox" value="slice-of-life"> Slice of Life
+        </label>
+        <label for="comedy" class="checkbox-content">
+          <input id="comedy" type="checkbox" value="comedy"> Comedy
+        </label>
+      </div>
+      <!--Comment - Textarea Input-->
+      <div class="textarea-input">
+        <label for="comment" class="textarea-title">Share your feelings about your favorite anime.</label>
+        <textarea id="comment" rows="3" cols="30" placeholder="I enjoy watching Sousou no Frieren because..."></textarea>
+      </div>
+      <div class="submit-button">
+        <input id="submit" type="submit" value="Submit">
+      </div>
+    </form> 
+  </body>
+</html>
